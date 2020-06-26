@@ -30,7 +30,7 @@ var urlsToCache = [
   "./images/sl1.jpg",
   "./images/sm1.jpg",
   "./images/up1.jpg",
-  "../manifest.json",
+  "./manifest.json",
   "./icon1.png"
 ];
  
