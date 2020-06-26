@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#ef5350"/>
+    <title>Pesona Indonesia</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="stylesheet" href="./css/materialize.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="apple-touch-icon" href="./icon1.png">
+</head>
+<body>
+    <!-- Navigasi -->
+    <nav class="red lighten-1 z-depth-3" role="navigation">
+        <div class="nav-wrapper container">
+            <a href="/" class="brand-logo tooltipped" id="logo-container" data-tooltip="Pesona Indonesia">Pesona <img class="indonesia" src="images/indonesia.png" alt=""></a>
+            <a href="#" class="sidenav-trigger waves-effect" data-target="nav-mobile"><i class="material-icons">format_list_bulleted</i> </a>
+            
+            <ul class="topnav right hide-on-med-and-down"></ul>
+            <ul class="sidenav" id="nav-mobile"></ul>
+        </div>
+    </nav>
+    <!-- End Navigasi -->
+
+    <!-- Content -->
+    <div class="container" id="body-content">
+
+    </div>
+    <!-- End Content -->
+
+    <!-- Footer -->
+    <footer class="page-footer z-depth-3">
+        <div class="footer-copyright">
+            <div class="container">
+                <p class="cp">
+                    © <span class="tahun"></span> Copyright Ilham JKM
+
+                </p>
+            
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+    
+    <script src="./js/materialize.min.js"></script>
+    <script src="./js/navbar.js"></script>
+    <script>
+        // Tooltip
+        let elems = document.querySelectorAll('.tooltipped');
+        let instances = M.Tooltip.init(elems, "bottom");
+
+        // Tahun
+        let tahun = document.querySelector(".tahun");
+        let date = new Date();
+        tahun.innerHTML = date.getFullYear();
+
+        
+
+        // REGISTER SERVICE WORKER
+        if ("serviceWorker" in navigator) {
+        window.addEventListener("load", function() {
+            navigator.serviceWorker
+            .register("/service-worker.js")
+            
+        });
+        } else {
+        console.log("ServiceWorker belum didukung browser ini.");
+        }
+        
+        
+    </script>
+   
+</body>
+</html>
