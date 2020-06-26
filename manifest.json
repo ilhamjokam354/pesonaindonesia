@@ -2,13 +2,13 @@
     "name": "Pesona Indonesia",
     "short_name": "Pesona INDO",
     "description": "Aplikasi Sederhana Informasi Nusantara",
-    "start_url": "/index.html",
+    "start_url": "./index.html",
     "display": "standalone",
     "background_color": "#ef5350",
     "theme_color": "#ef5350 ",
     "icons": [
         {
-            "src": "icon1.png",
+            "src": "./icon1.png",
             "sizes": "512x512",
             "type": "image/png"
         }
