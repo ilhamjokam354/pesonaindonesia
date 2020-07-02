@@ -8,6 +8,6 @@ Fitur :
 
 - Bisa digunakan Dalam Mode Offline (Asal Halaman Udah Pernah Dibuka)
 
-- Module Bundler (Webpack)
+
 
 Demo : https://ilhamjokam354.github.io/pesonaindonesia
